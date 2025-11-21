@@ -14,9 +14,9 @@ while True:
                 print('Correct')
                 print('Would you like to play again?')
                 user_input: str = input().lower()
-                if (user_input == ['yes', 'y', 'sure', 'yea', 'yeah']):
+                if user_input in ['yes', 'y', 'sure', 'yea', 'yeah']:
                     break
-                elif (user_input == ['no', 'n']):
+                elif user_input in ['no', 'n']:
                     exit()
                 else:
                     print('Unrecongized input shutting down')
