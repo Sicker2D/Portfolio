@@ -30,12 +30,13 @@ while True:
                 print(f'The quotient of {num1} and {num2} is {num1 / num2}')
             except ValueError:
                 print('That doesn\'t seem like a valid number. Try again!')
-    elif user_input in ['sq', 'square root']:
+    elif user_input in ['root']:
             try:
-                num1: float = float(input('First number: '))
-                print(f'The square root of {num1} is {math.sqrt(num1)}')
+                    num1: float = float(input('To what root would you like to do? '))
+                    num2: float = float(input(f'What number would you like to put to the {num1} root?'))
+                    print(f'{num2} to the {num1} root is {num2**(1/num1)}')
             except ValueError:
-                print('That doesn\'t seem like a valid number. Try again!')
+                    print('That doesn\'t seem like a valid number. Try again!')
     elif user_input in ['^x']:
                 try:
                     num1: float = float(input('What power would you like to do? '))
