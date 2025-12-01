@@ -36,10 +36,11 @@ while True:
                 print(f'The square root of {num1} is {math.sqrt(num1)}')
             except ValueError:
                 print('That doesn\'t seem like a valid number. Try again!')
-    elif user_input in ['square', '^2']:
+    elif user_input in ['^x']:
                 try:
-                    num1: float = float(input('First number: '))
-                    print(f'The square of {num1} is {num1**2}')
+                    num1: float = float(input('What power would you like to do? '))
+                    num2: float = float(input(f'What number would you like to put to the {num1} power?'))
+                    print(f'{num2} to the {num1} power is {num2**num1}')
                 except ValueError:
                     print('That doesn\'t seem like a valid number. Try again!')
 
